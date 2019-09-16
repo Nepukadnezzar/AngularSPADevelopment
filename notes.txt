@@ -1,3 +1,8 @@
 http://tinyurl.com/y36k33ek
 
 https://github.com/Nepukadnezzar/AngularSPADevelopment/tree/master/Lab
+
+npmjs für alle packages (so wie maven repo)
+
+ng add führt alle schematics auch aus, install installiert nur (=> ng add nehmen)
+	=> wenn möglich immer add verwenden (musst halt wissen, dass es ein add gibt)
