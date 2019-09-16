@@ -1,1 +1,6 @@
-<p>skill-container works!</p>
+<div>
+  <h2>The Skills</h2>
+  <div class="row" *ngFor="let s of skills" (click)="selectSkill(s)">
+    {{ s.name }}
+  </div>
+</div>
