@@ -21,8 +21,10 @@ tsconfig.json -> Compiler Konfiguration
 Strings in Typescript -> mdn string functions
 grundsätzlich für javascript mdn web docs
 
-bei clones -> lowdash hat clonedeep
+bei clones -> lodash hat clonedeep (allerdings schon sehr alt)
 
 destructuring !!!!
 
-protected nochmal ansehen!!!
+bei jedem neu aufmachen -> npm install
+
+ngContainer wird kein Tag im Dom

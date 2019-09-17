@@ -33,5 +33,13 @@
   </mat-card-header>
   <a mat-raised-button (click)="toggleInput()">Click to enable the input</a
   ><br />
+
   <input type="text" [disabled]="isDisabled" placeholder="Enter name" />
+  <a mat-raised-button (click)="hideInput()">Set Hidden</a>
+  <input
+    type="text"
+    [hidden]="isHidden"
+    placeholder="HiddenText"
+    [disabled]="true"
+  />
 </mat-card>
