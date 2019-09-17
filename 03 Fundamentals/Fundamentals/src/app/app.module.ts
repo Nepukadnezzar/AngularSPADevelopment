@@ -21,7 +21,7 @@ registerLocaleData(localeDe);
     MaterialModule,
     SharedModule
   ],
-  providers: [{ provide: LOCALE_ID, useValue: "en" }],
+  providers: [{ provide: LOCALE_ID, useValue: "de" }],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
