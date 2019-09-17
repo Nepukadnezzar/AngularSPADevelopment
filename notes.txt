@@ -2,7 +2,25 @@ http://tinyurl.com/y36k33ek
 
 https://github.com/Nepukadnezzar/AngularSPADevelopment/tree/master/Lab
 
+git clone [url to fork]
+
+git remote add upstream [url to root]
+
+git remote -v -> Konfiguration
+
+
 npmjs für alle packages (so wie maven repo)
 
 ng add führt alle schematics auch aus, install installiert nur (=> ng add nehmen)
 	=> wenn möglich immer add verwenden (musst halt wissen, dass es ein add gibt)
+
+src/app/demos/samples -> dort sollte die lösung sein, wie ich was tue
+
+tsconfig.json -> Compiler Konfiguration
+
+Strings in Typescript -> mdn string functions
+grundsätzlich für javascript mdn web docs
+
+bei clones -> lowdash hat clonedeep
+
+destructuring !!!!
