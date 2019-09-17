@@ -24,3 +24,5 @@ grundsätzlich für javascript mdn web docs
 bei clones -> lowdash hat clonedeep
 
 destructuring !!!!
+
+protected nochmal ansehen!!!
