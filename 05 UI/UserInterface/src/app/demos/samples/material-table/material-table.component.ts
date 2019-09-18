@@ -10,7 +10,7 @@ import { Voucher } from "../model";
 })
 export class MaterialTableComponent implements OnInit {
   dataSource: MatTableDataSource<Voucher>;
-  displayedColumns = ["Text", "Date", "Amount"];
+  displayedColumns = ["ID", "Text", "Date", "Amount"];
 
   constructor(private http: HttpClient) {}
 
