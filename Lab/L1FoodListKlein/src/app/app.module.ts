@@ -8,13 +8,19 @@ import { FoodContainerComponent } from "./food-container/food-container.componen
 import { FoodlistComponent } from "./food-container/foodlist/foodlist.component";
 import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 import { FoodeditComponent } from "./food-container/foodedit/foodedit.component";
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import { SidemenuComponent } from './sidemenu/sidemenu.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FoodContainerComponent,
     FoodlistComponent,
-    FoodeditComponent
+    FoodeditComponent,
+    ToolbarComponent,
+    SidemenuComponent,
+    FooterComponent
   ],
   imports: [BrowserModule, HttpClientModule, FormsModule, NoopAnimationsModule],
   providers: [],
