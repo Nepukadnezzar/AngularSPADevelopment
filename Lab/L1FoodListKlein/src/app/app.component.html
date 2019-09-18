@@ -10,6 +10,20 @@
   <div gdArea="navbar"><app-sidemenu></app-sidemenu></div>
   <div gdArea="main"></div>
 </div> -->
-<div><app-toolbar></app-toolbar></div>
-<!-- <div><app-sidemenu></app-sidemenu></div> -->
-<router-outlet></router-outlet>
+
+<div
+  gdAreas="navbar navbar | sidemenu main | footer footer"
+  gdAreas.lt-md="navbar  | main  | footer "
+  gdGap="0.3rem"
+  gdRows="70px auto 70px"
+  gdColumns="80px auto "
+  gdColumns.lt-md="100%"
+  class="grid"
+>
+  <div gdArea="navbar"><app-toolbar></app-toolbar></div>
+  <div gdArea="main"><router-outlet></router-outlet></div>
+  <div gdArea="sidemenu" fxHide.lt-md>
+    <app-sidemenu></app-sidemenu>
+  </div>
+  <div gdArea="footer"><app-footer></app-footer></div>
+</div>
