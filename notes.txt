@@ -33,3 +33,7 @@ Module Aufbau unbedingt anschauen!!!!
 
 AngularHttpClient mit Angular 8 umgestellt worden => source codes zum Teil obsolet
 Grundsätzlich sind alle Beispiele stark outdated
+
+wallaby für echtzeit unit tests !!
+
+firebase
