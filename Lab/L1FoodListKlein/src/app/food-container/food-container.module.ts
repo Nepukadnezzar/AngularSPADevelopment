@@ -7,6 +7,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { FormsModule } from "@angular/forms";
 import { RouterModule, Routes } from "@angular/router";
 import { MaterialModule } from "../material.module";
+import { ReactiveFormsModule } from "@angular/forms";
 
 const foodroutes: Routes = [
   {
@@ -23,7 +24,8 @@ const foodroutes: Routes = [
     FormsModule,
     RouterModule.forChild(foodroutes),
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ]
 })
 export class FoodContainerModule {}

@@ -1,6 +1,7 @@
 <table>
   <thead>
     <tr>
+      <th>Id</th>
       <th>Name</th>
       <th>Preis</th>
       <th>Kalorien</th>
@@ -8,6 +9,7 @@
   </thead>
   <tbody>
     <tr *ngFor="let f of items">
+      <td>{{ f.id }}</td>
       <td>{{ f.name }}</td>
       <td>{{ f.price }}</td>
       <td>{{ f.calories }}</td>

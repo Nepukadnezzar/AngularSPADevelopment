@@ -13,11 +13,12 @@ export class SubjectsComponent implements OnInit {
   bs$: BehaviorSubject<number> = new BehaviorSubject<number>(-1);
 
   ngOnInit() {
-    this.runSubjectInit();
-    // this.runBSubjectInit();
+    // this.runSubjectInit();
+    this.runBSubjectInit();
   }
 
   private runSubjectInit() {
+    this.sub$.next(4);
     this.sub$.subscribe(val => console.log("Subsciber A", val));
     this.sub$.subscribe(val => console.log("Subsciber B", val));
     this.sub$.next(10);
@@ -36,7 +37,7 @@ export class SubjectsComponent implements OnInit {
   }
 
   emitNextBS() {
-    this.sub$.subscribe(val => console.log("Late Subsciber", val));
+    this.bs$.subscribe(val => console.log("Late Subsciber", val));
     this.bs$.next(20);
   }
 }

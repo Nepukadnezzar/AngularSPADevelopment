@@ -30,3 +30,6 @@ bei jedem neu aufmachen -> npm install
 ngContainer wird kein Tag im Dom
 
 Module Aufbau unbedingt anschauen!!!!
+
+AngularHttpClient mit Angular 8 umgestellt worden => source codes zum Teil obsolet
+Grundsätzlich sind alle Beispiele stark outdated

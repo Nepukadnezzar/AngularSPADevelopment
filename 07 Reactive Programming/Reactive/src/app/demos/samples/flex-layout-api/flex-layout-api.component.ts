@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { Subscription } from "rxjs";
 import { MediaChange, MediaObserver } from "@angular/flex-layout";
 import { environment } from "src/environments/environment";
+import { ConsoleReporter } from "jasmine";
 
 @Component({
   selector: "app-flex-layout-api",
@@ -25,6 +26,7 @@ export class FlexLayoutApiComponent implements OnInit {
   subscribeScreen() {
     this.watcher = this.obsMedia.media$.subscribe((change: MediaChange) => {
       this.mq = change.mqAlias;
+      console.log(this.mq);
       switch (change.mqAlias) {
         case "xs":
           this.isPhone = true;

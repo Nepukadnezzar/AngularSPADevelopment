@@ -86,9 +86,9 @@ import { Event, NavigationEnd, Router } from "@angular/router";
 import { filter, flatMap, map } from "rxjs/operators";
 import { Observable } from "rxjs";
 import { MenuService } from "src/app/shared/menu/menu.service";
-import { DemoItem } from "../demo-item";
 import { DemoService } from "../demo.service";
 import { environment } from "src/environments/environment";
+import { DemoItem } from "../demo-item.model";
 
 @Component({
   selector: "app-demo-container",

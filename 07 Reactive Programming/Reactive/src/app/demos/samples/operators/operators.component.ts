@@ -58,9 +58,9 @@ export class OperatorsComponent implements OnInit {
       .getVouchers()
       .pipe(
         //Obs Operator map()
-        map(vs => {
+        map(va => {
           //ES6 array.map()
-          return vs.map(v => ({
+          return va.map(v => ({
             ...v,
             Label: `${v.Text} costs € ${v.Amount}`
           }));
@@ -128,14 +128,14 @@ export class OperatorsComponent implements OnInit {
   }
 
   useFlatMap() {
-    let url = `${environment.apiUrl}api/vouchers/2`;
+    let url = `${environment.apiUrl}vouchers/2`;
     this.httpClient
       .get<Voucher>(url)
       .pipe(
         flatMap(data => {
           let acctID = data.Details[0].AccountID;
           return this.httpClient.get<Account>(
-            `${environment.apiUrl}api/accounts/${acctID}`
+            `${environment.apiUrl}accounts/${acctID}`
           );
         })
       )
